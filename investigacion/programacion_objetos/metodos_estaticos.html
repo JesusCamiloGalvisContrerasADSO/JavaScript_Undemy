@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Animal {
+      constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.genero = null;
+      }
+
+      //metodos getter y setter
+
+      get getRaza() {
+        return this.raza;
+      }
+
+      get getNombre() {
+        return this.nombre;
+      }
+
+      get getEdad() {
+        return this.edad;
+      }
+
+      set setRaza(raza) {
+        this.raza = raza;
+      }
+
+      set setNombre(nombre) {
+        this.nombre = nombre.toLowerCase();
+      }
+
+      set setEdad(edad) {
+        this.edad = edad;
+      }
+
+
+
+
+      //Metodos
+      saludar() {
+        console.log(`El Caballo esta saludando`);
+      }
+
+      comer() {
+        console.log(`A ${this.nombre} le gustan las hamburguesas`);
+      }
+
+      static raza() {
+        console.log(`El animal es de añguna raza`);
+      }
+
+    }
+
+
+
+    const gato = new Animal('nombre', 3, 'macho');
+    console.log(gato)
+
+    gato.setRaza = "gato criollo";
+    gato.setNombre = "John";
+    gato.setEdad = 38;
+
+
+
+    // Animal.raza();
+
+    console.log(gato.getNombre, gato.getEdad, gato.getRaza)
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

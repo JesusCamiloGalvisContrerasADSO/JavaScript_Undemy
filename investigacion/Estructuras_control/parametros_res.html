@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+
+
+    function sumar(a,b,...r){
+      let suma = a +b;
+      r.forEach(numero =>{
+        suma += numero;
+      })
+      return suma;
+    }
+
+
+    function sum(...numero) {
+        let total = 0;
+        for (const txt of numero) {
+          total += txt;
+        }
+        return total;
+      }
+
+      console.log(sum(1, 2, 3));
+      // suma los numeros que le indiquemos a la variable
+
+      console.log(sum(1, 2, 3, 4));
+      // suma los numeros que le indiquemos a la variable
+  </script>
+</body>
+</html>

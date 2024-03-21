@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function sum(x, y, z) {
+        return x + y + z;
+      }
+
+      const numbers = [1, 2, 3];
+
+      console.log(sum(...numbers));
+      // suma los numeros los cuales se asignaron el la constante
+
+      console.log(sum.apply(null, numbers));
+      // suma los numeros los cuales se asignaron el la constante
+  </script>
+</body>
+</html>

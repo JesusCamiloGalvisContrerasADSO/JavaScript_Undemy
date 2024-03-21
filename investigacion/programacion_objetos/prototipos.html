@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    // let gato1 = {
+    //   nombre: "Juan",
+    //   edad: 1,
+    //   saludar() {
+    //     console.log("hola soy " + this.nombre);
+    //   }
+    // }
+
+
+    // let gato2 = {
+    //   nombre: "mirringo",
+    //   edad: 1,
+    //   saludar() {
+    //     console.log("hola soy " + this.nombre);
+    //   }
+    // }
+
+    // console.log(gato1);
+    // gato1.saludar();
+
+
+
+
+
+
+    // ejemplo
+
+    function Persona(nombre, edad,) {
+      this.nombre = nombre;
+
+      this.edad = edad;
+
+      // this.saludar = function () {
+      //   console.log(`A ${this.nombre} tengo ${this.edad}`)
+      // }
+    }
+    Persona.prototype.comer = function () { //estos son los prototipos, ayudan a que no consuma mas memoria
+      console.log(`A ${this.nombre} le gustan las hamburguesas`);
+    }
+
+
+    const persona1 = new Persona("Bob", 32);
+    const persona2 = new Persona("Jesus", 16,);
+
+    console.log(persona1);
+    persona1.saludar();
+    
+
+
+
+    //funcion constructora
+
+
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function Animal(nombre, edad,) {
+      this.nombre = nombre;
+      this.edad = edad;
+    }
+    Animal.prototype.Saludar = function () {
+      console.log(`El gato esta saludando`);
+    }
+    Animal.prototype.comer = function () {
+      console.log(`A ${this.nombre} le gustan las hamburguesas`);
+    }
+    //herencia prototipica
+    function Gato(tamanio) {
+      this.super = Animal;
+      // this.super(nombre, edad);
+      this.tamanio = tamanio;
+    }
+    Gato.prototype.Dormir = function () {
+      console.log(`El gato duerme 16 horas`);
+    }
+
+    Gato.prototype = new Animal();
+
+    Gato.prototype.constructor = Gato;
+
+    const abigail = new Animal('abigail',12)
+    const nimbo = new Gato(3,'nindo','grande')
+    console.log(abigail)
+    console.log(nimbo)
+    abigail.comer()
+    nimbo.comer()
+
+
+
+
+
+    // const nimbo = new Gato(`grande`, `nimbo`, 3);
+    // nimbo.Dormir();
+    // nimbo.Saludar();
+
+  </script>
+</body>
+
+</html>
