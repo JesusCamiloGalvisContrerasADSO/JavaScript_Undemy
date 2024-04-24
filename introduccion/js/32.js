@@ -2,7 +2,6 @@
 
 // async / await
 
-
 function descargarClientes(){
     return new Promise(resolve =>{
         console.log('Descargando clientes... espere...');
